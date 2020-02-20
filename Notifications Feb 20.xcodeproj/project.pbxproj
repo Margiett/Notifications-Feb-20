@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9F676E7423FEE8AD00867B78 /* CreateNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F676E7323FEE8AD00867B78 /* CreateNotificationViewController.swift */; };
+		9F676E7623FEEB2C00867B78 /* PendingNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F676E7523FEEB2C00867B78 /* PendingNotification.swift */; };
+		9F676E7823FEF3A900867B78 /* pursuit-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F676E7723FEF3A900867B78 /* pursuit-logo.png */; };
 		9FE9F83B23FEDB61007752ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9F83A23FEDB61007752ED /* AppDelegate.swift */; };
 		9FE9F83D23FEDB61007752ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9F83C23FEDB61007752ED /* SceneDelegate.swift */; };
 		9FE9F83F23FEDB61007752ED /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9F83E23FEDB61007752ED /* NotificationsViewController.swift */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		9F676E7323FEE8AD00867B78 /* CreateNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificationViewController.swift; sourceTree = "<group>"; };
+		9F676E7523FEEB2C00867B78 /* PendingNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingNotification.swift; sourceTree = "<group>"; };
+		9F676E7723FEF3A900867B78 /* pursuit-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pursuit-logo.png"; sourceTree = "<group>"; };
 		9FE9F83723FEDB61007752ED /* Notifications Feb 20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notifications Feb 20.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE9F83A23FEDB61007752ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE9F83C23FEDB61007752ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				9FE9F83E23FEDB61007752ED /* NotificationsViewController.swift */,
 				9FE9F84023FEDB62007752ED /* Main.storyboard */,
 				9F676E7323FEE8AD00867B78 /* CreateNotificationViewController.swift */,
+				9F676E7723FEF3A900867B78 /* pursuit-logo.png */,
+				9F676E7523FEEB2C00867B78 /* PendingNotification.swift */,
 				9FE9F84323FEDB64007752ED /* Assets.xcassets */,
 				9FE9F84523FEDB64007752ED /* LaunchScreen.storyboard */,
 				9FE9F84823FEDB64007752ED /* Info.plist */,
@@ -184,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE9F84723FEDB64007752ED /* LaunchScreen.storyboard in Resources */,
+				9F676E7823FEF3A900867B78 /* pursuit-logo.png in Resources */,
 				9FE9F84423FEDB64007752ED /* Assets.xcassets in Resources */,
 				9FE9F84223FEDB62007752ED /* Main.storyboard in Resources */,
 			);
@@ -204,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE9F83F23FEDB61007752ED /* NotificationsViewController.swift in Sources */,
+				9F676E7623FEEB2C00867B78 /* PendingNotification.swift in Sources */,
 				9FE9F83B23FEDB61007752ED /* AppDelegate.swift in Sources */,
 				9FE9F83D23FEDB61007752ED /* SceneDelegate.swift in Sources */,
 				9F676E7423FEE8AD00867B78 /* CreateNotificationViewController.swift in Sources */,

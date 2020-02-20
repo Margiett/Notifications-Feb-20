@@ -13,15 +13,24 @@ class NotificationsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     //data for tableview
-    private var notification = [String]()
+    private var notification = [UNNotificationRequest]()
     // this is a sigleton
     private let center = UNUserNotificationCenter.current()
+    
+    private let pendingNotification = PendingNotification()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         checkForNotificationAuthorization()
-        requestNotificationPermission()
+        //   requestNotificationPermission()
+        loadNotifications()
+    }
+    
+    private func loadNotifications(){
+        pendingNotification.getPendingNotifications { (requests) in
+            self.notification = requests
+        }
     }
      //MARK: asking user permission for notification
     private func checkForNotificationAuthorization(){
@@ -57,7 +66,7 @@ class NotificationsViewController: UIViewController {
 
 extension NotificationsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 // notification.count 
+        return notification.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "notificationCell", for: indexPath)
